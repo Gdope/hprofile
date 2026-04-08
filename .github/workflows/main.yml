@@ -8,7 +8,7 @@ env:
   ECS_SERVICE: stefan-taskdef-service
   ECS_CLUSTER: stefan-cluster
   ECS_TASK_DEFINITION: aws-files/taskdeffile.json
-  CONTAINER_NAME: stefan-repo
+  CONTAINER_NAME: stefanapp
 
 jobs:
   Testing:
