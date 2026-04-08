@@ -63,8 +63,8 @@ jobs:
           secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           registry: ${{ secrets.REGISTRY }}
           repo: stefan-ecr
-          region: ${{env.AWS_REGION}}
-          auto_tag: true
+          region: ${{ env.AWS_REGION }}
+          tags: latest, ${{ github.run_number }}
           daemon_off: false
           dockerfile: ./Dockerfile
           context: ./
